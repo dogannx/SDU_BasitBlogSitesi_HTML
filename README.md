@@ -118,8 +118,8 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ## İletişim
 
 **Doğan Coşman**  
-Öğrenci No: 123456789  
-Email: dogan@example.com
+Öğrenci No: 2316501414
+Email: doganncosman@gmail.com
 
 ---
 
