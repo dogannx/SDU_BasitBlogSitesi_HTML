@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğan Coşman - Kişisel Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="toggle-label">
+                <span class="toggle-slider"></span>
+                <span class="toggle-icons">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+    </div>
+    <!-- Navigasyon Çubuğu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Doğan Coşman</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projeler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ana Sayfa Bölümü -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Merhaba, Ben Doğan Coşman</h1>
+            <p>Web geliştirici ve teknoloji tutkunu</p>
+            <a href="#about" class="cta-button">Daha Fazla Bilgi</a>
+        </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Biyografi</h3>
+                    <p>Merhaba, ben Doğan Coşman. Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Yazılım geliştirme alanına özellikle web teknolojileri üzerine ilgi duyuyorum.</p>
+                    
+                    <p>Şu ana kadar hem kişisel projelerimde hem de ekip çalışmaları içinde deneyimler kazandım. Özellikle Go (Golang), JavaScript ve modern web frameworkleri ile çalışıyorum. Backend geliştirme konusunda Go, Bun, Fiber, PostgreSQL gibi teknolojilerle projeler geliştiriyorum. Frontend tarafında ise Vue.js ve TypeScript ile çalışmayı seviyorum.</p>
+                    
+                    <h3>Yeteneklerim</h3>
+                    <ul>
+                        <li><strong>Web Geliştirme:</strong> Go, JavaScript, Vue.js, Fiber</li>
+                        <li><strong>Veritabanı Yönetimi:</strong> PostgreSQL, Gorm</li>
+                        <li><strong>Versiyon Kontrol:</strong> Git & GitHub</li>
+                        <li><strong>Yazılım Mimarisi ve Proje Yönetimi</strong></li>
+                        <li><strong>Problem çözme ve algoritma geliştirme</strong></li>
+                    </ul>
+                    
+                    <h3>Şu Ana Kadar Yaptıklarım</h3>
+                    <ul>
+                        <li><strong>Kişisel Blog Projesi:</strong> Go ve PostgreSQL kullanarak backend tarafını geliştirdim.</li>
+                        <li><strong>VueBlog:</strong> Vue.js ve Realize ile geliştirdiğim blog platformu.</li>
+                        <li><strong>Teknofest Projesi:</strong> Eğitim alanında VR laboratuvar, yapay zekâ destekli koçluk ve bulmaca tabanlı öğrenme içeren web platformunun proje kaptanlığını üstlendim.</li>
+                    </ul>
+                    
+                    <h3>Hedeflerim</h3>
+                    <ul>
+                        <li>Yazılım geliştirme alanında kendimi daha da ileri taşıyarak tam donanımlı bir yazılım mühendisi olmak.</li>
+                        <li>İngilizce'yi ileri seviyeye taşımak ve uluslararası projelerde yer almak.</li>
+                        <li>Hem bireysel projelerimle hem de ekip çalışmalarımda değer üreterek teknoloji dünyasına katkıda bulunmak.</li>
+                    </ul>
+                    
+                    <h3>İlgi Alanlarım</h3>
+                    <ul>
+                        <li>Yazılım geliştirme ve yeni teknolojiler</li>
+                        <li>Satranç</li>
+                        <li>Bağlama çalmak</li>
+                        <li>Kişisel gelişim</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300x400/4a90e2/ffffff?text=Profil+Resmi" alt="Doğan Coşman Profil Resmi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeler Bölümü -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projelerim</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-modal="project1">
+                    <img src="images/1.png" alt="Kişisel Web Sitesi">
+                    <h3>Kişisel Web Sitesi</h3>
+                    <p>HTML, CSS ve JavaScript kullanarak geliştirdiğim kişisel web sitem.</p>
+                    <div class="project-video">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <button class="project-btn">Detayları Gör</button>
+                </div>
+                
+                <div class="project-card" data-modal="project2">
+                    <img src="images/2.png" alt="E-Ticaret Platformu">
+                    <h3>E-Ticaret Platformu</h3>
+                    <p>Modern e-ticaret çözümleri için geliştirdiğim platform.</p>
+                    <div class="project-video">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <button class="project-btn">Detayları Gör</button>
+                </div>
+                
+                <div class="project-card" data-modal="project4">
+                    <img src="images/3.jpg" alt="Blog Yönetim Sistemi">
+                    <h3>Blog Yönetim Sistemi</h3>
+                    <p>İçerik yönetimi için geliştirdiğim blog sistemi.</p>
+                    <div class="project-video">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <button class="project-btn">Detayları Gör</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>İletişim</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Benimle İletişime Geçin</h3>
+                    <p>Projeleriniz hakkında konuşmak veya işbirliği yapmak isterseniz, aşağıdaki bilgilerden bana ulaşabilirsiniz.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>E-posta</h4>
+                                <a href="mailto:doganncosman@gmail.com" class="contact-link">doganncosman@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/do%C4%9Fan-co%C5%9Fman-042b3529b/" target="_blank" class="contact-link">linkedin.com/in/dogancosman</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🐙</div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/dogannx" target="_blank" class="contact-link">github.com/dogannx</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🎓</div>
+                            <div class="contact-details">
+                                <h4>Öğrenci No</h4>
+                                <span class="contact-link">2316501414</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Doğan Coşman - Öğrenci No: 2316501414</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Project Modals -->
+    <div class="modal" id="project1">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Kişisel Web Sitesi</h2>
+            <div class="modal-body">
+                <img src="images/1.png" alt="Kişisel Web Sitesi">
+                <div class="modal-text">
+                    <h3>Proje Detayları</h3>
+                    <p>Bu proje, modern web teknolojileri kullanılarak geliştirilmiş kişisel bir web sitesidir. Responsive tasarım, smooth animasyonlar ve kullanıcı dostu arayüz özelliklerine sahiptir.</p>
+                    <h4>Kullanılan Teknolojiler:</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (Grid, Flexbox)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                    <h4>Özellikler:</h4>
+                    <ul>
+                        <li>Modern ve temiz tasarım</li>
+                        <li>Mobil uyumlu responsive layout</li>
+                        <li>Smooth scroll animasyonları</li>
+                        <li>İnteraktif form validasyonu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project2">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>E-Ticaret Platformu</h2>
+            <div class="modal-body">
+                <img src="images/2.png" alt="E-Ticaret Platformu">
+                <div class="modal-text">
+                    <h3>Proje Detayları</h3>
+                    <p>Modern e-ticaret çözümleri için geliştirilmiş kapsamlı bir platform. Güvenli ödeme sistemi, ürün yönetimi ve kullanıcı deneyimi odaklı tasarım.</p>
+                    <h4>Kullanılan Teknolojiler:</h4>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Stripe API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project3">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Mobil Uygulama</h2>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/600x300/45b7d1/ffffff?text=Mobil+App" alt="Proje 3">
+                <div class="modal-text">
+                    <h3>Proje Detayları</h3>
+                    <p>React Native ile geliştirilmiş cross-platform mobil uygulama. iOS ve Android platformlarında çalışan performanslı bir çözüm.</p>
+                    <h4>Kullanılan Teknolojiler:</h4>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Redux</li>
+                        <li>Firebase</li>
+                        <li>Native Modules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project4">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Blog Yönetim Sistemi</h2>
+            <div class="modal-body">
+                <img src="images/3.jpg" alt="Blog Yönetim Sistemi">
+                <div class="modal-text">
+                    <h3>Proje Detayları</h3>
+                    <p>İçerik yönetimi için geliştirilmiş modern blog sistemi. Admin paneli, kategori yönetimi ve SEO optimizasyonu özelliklerine sahip.</p>
+                    <h4>Kullanılan Teknolojiler:</h4>
+                    <ul>
+                        <li>Vue.js</li>
+                        <li>Express.js</li>
+                        <li>MySQL</li>
+                        <li>JWT Authentication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
