@@ -2,7 +2,7 @@
 
 Bu proje HTML, CSS, JS ile hazırlanmıştır.
 
-[Projenin Canlı Adresi](https://dogannx.github.io/blog-projesi)
+[Projenin Canlı Adresi](https://dogannx.github.io/SDU_BasitBlogSitesi_HTML/)
 
 ## Proje Hakkında
 
